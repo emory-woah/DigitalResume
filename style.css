@@ -1,0 +1,144 @@
+/* Resets the margins of the page */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* spilts the intro page 30/70 */
+.split{
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  width: 30%;
+  left: 0;
+  background-color: #0A0908;
+}
+
+.header-left{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: auto;
+  height: 100vh;
+}
+
+/* Control the right side */
+.right {
+  width: 70%;
+  right: 0;
+  background-color: BLACK;
+}
+
+
+.header-images {
+  width: auto;
+  height: 100%;
+
+  background: #000000 0px 0px url('images/collage2.png') repeat-x;
+
+  /* Ensures background size */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* Scrolls background of right panel (collage images) */
+  -webkit-animation: scroll 100s linear infinite;
+  animation: scroll 100s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+  from {background-position: 3840px 0;}
+  to {background-position: 0 0;}
+}
+
+@keyframes scroll {
+  from {background-position: 3840px 0;}
+  to {background-position: 0 0;}
+}
+
+/* settings for the main text */
+ #name{
+   height: auto;
+   width: 100%;
+
+   /* makes text bg transparent */
+   background: rgba(0, 0, 0, 0);
+
+   color: #FDE12D;
+   font-family: 'Abril Fatface', cursive;
+   /* font-family: 'Playfair Display', serif; */
+   font-size: 3.8vw;
+ }
+
+/* places buttons evenly at bottom of page */
+.buttons{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+/* Main settings for all buttons */
+a{
+  font-size: 1vw;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  color: WHITE;
+  font-family: 'Spectral', serif;
+
+  padding: 10% 1%;
+
+  height: 1vh;
+  max-height: 1vh;
+  width: 20%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border: none;
+
+/* default button setting in case of error */
+  background-color: BLACK;
+  background-size: contain;
+
+  transition: 2s;
+}
+
+/* raises buttons on hover */
+a:hover{
+  transition: 2s;
+  max-height: 10vh;
+  height: 10vh;
+  padding: 10% 10%;
+}
+
+/* Color change for the Button */
+#me{
+    background-color: #9046CF;
+    color: #0A0908;
+}
+
+#experiences{
+    background-color: #CC59D2;
+    color: #0A0908;
+}
+
+#projects{
+    background-color: #F487B6;
+    color: #0A0908;
+}
+
+#contact{
+    background-color: #FDE12D;
+    color: #0A0908;
+}

@@ -1,0 +1,120 @@
+/* Resets the margins of the page */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* spilts the intro page 30/70 */
+.split{
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left{
+  width: 70%;
+  left: 0;
+  background-color: #0b3954;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pdf{
+  width: 90%;
+  height: 90%;
+  outline: none;
+}
+
+/* Control the right side */
+.right {
+  width: 30%;
+  right: 0;
+  background-color: #0b3954;
+}
+
+.header-right{
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-between;
+  width: auto;
+  height: 100vh;
+}
+
+/* settings for the main text */
+ #name{
+   background: rgba(0, 0, 0, 0);
+   color: #f7a072;
+   font-family: 'Abril Fatface', cursive;
+   font-size: 3.8vw;
+   text-align: right;
+ }
+
+/* places buttons evenly at bottom of page */
+.buttons{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* Main settings for all buttons */
+a{
+  font-size: 1vw;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  color: WHITE;
+  font-family: 'Spectral', serif;
+
+  padding: 10% 1%;
+
+  height: 1vh;
+  max-height: 1vh;
+  width: 20%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: none;
+
+/* default button setting in case of error */
+  background-color: BLACK;
+  background-size: contain;
+
+  transition: 2s;
+}
+
+/* raises buttons on hover */
+a:hover{
+  transition: 2s;
+  max-height: 10vh;
+  height: 10vh;
+  padding: 10% 10%;
+}
+
+/* Color change for the Button */
+#Emory{
+    background-color: #0fa3b1;
+    color: #0b3954;
+}
+
+#home{
+    background-color: #b5e2fa;
+    color: #0b3954;
+}
+
+#projects{
+    background-color: #f9f7f3;
+    color: #0b3954;
+}
+
+#contact{
+    background-color: #eddea4;
+    color: #0b3954;
+}

@@ -1,0 +1,156 @@
+/* Resets the margins of the page */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* spilts the intro page 30/70 */
+.split{
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left{
+  height: 100%;
+  width: 70%;
+  left: 0;
+  background-color: #8f5c38;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialmediabin{
+  width: 70%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 10%;
+}
+
+.links{
+  background: #242325;
+  border-radius: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socalimages{
+  height: 100%;
+  width: 100%;
+}
+
+hr{
+  width: 30%;
+  color: #242325;
+}
+
+#contactinfo{
+  padding-top: 2%;
+  color: #f0dfad;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.para{
+padding-bottom: 3%;
+}
+
+/* Control the right side */
+.right {
+  width: 30%;
+  right: 0;
+  background-color: #8f5c38;
+}
+
+.header-right{
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-between;
+  width: auto;
+  height: 100vh;
+}
+
+/* settings for the main text */
+ #name{
+   background: rgba(0, 0, 0, 0);
+   color: #242325;
+   font-family: 'Abril Fatface', cursive;
+   font-size: 3.8vw;
+   text-align: right;
+ }
+
+/* places buttons evenly at bottom of page */
+.buttons{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* Main settings for all buttons */
+.sidebar{
+  font-size: 1vw;
+  text-align: center;
+  text-decoration: none;
+  color: WHITE;
+  font-family: 'Spectral', serif;
+
+  padding: 10% 1%;
+
+  height: 1vh;
+  max-height: 1vh;
+  width: 20%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: none;
+
+/* default button setting in case of error */
+  background-color: BLACK;
+  background-size: contain;
+
+  transition: 2s;
+}
+
+/* raises buttons on hover */
+.sidebar:hover{
+  transition: 2s;
+  max-height: 10vh;
+  height: 10vh;
+  padding: 10% 10%;
+}
+
+/* Color change for the Button */
+#emory{
+    background-color: #aa4465;
+    color: #242325;
+}
+
+#experiences{
+    background-color: #edf0da;
+    color: #242325;
+}
+
+#projects{
+    background-color: #a89b8c;
+    color: #242325;
+}
+
+#home{
+    background-color: #f0dfad;
+    color: #242325;
+}
