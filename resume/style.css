@@ -28,9 +28,10 @@ body{
   align-items: center;
 }
 
-#pdf{
+img{
+  padding: 5%;
   width: 90%;
-  height: 90%;
+  height: auto;
   outline: none;
 }
 
