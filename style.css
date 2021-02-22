@@ -45,7 +45,7 @@ body{
   width: auto;
   height: 100%;
 
-  background: #000000 0px 0px url('/images/collage2.png') repeat-x;
+  background: #000000 0px 0px url('images/Collage2.png') repeat-x;
 
   /* Ensures background size */
   -webkit-background-size: cover;
