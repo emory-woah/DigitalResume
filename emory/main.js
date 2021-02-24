@@ -4,11 +4,4 @@ $(document).ready(function(){
   import 'simplebar';
   import 'simplebar/dist/simplebar.css';
 
-  $("a").hover(
-    function(){
-
-    },
-    function(){
-
-  });
 });

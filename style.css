@@ -33,6 +33,14 @@ body{
   height: 100vh;
 }
 
+#header-images-res-tab{
+  display: none;
+}
+
+#header-images-res-phone{
+  display: none;
+}
+
 /* Control the right side */
 .right {
   width: 70%;
@@ -141,4 +149,150 @@ a:hover{
 #contact{
     background-color: #FDE12D;
     color: #0A0908;
+}
+
+@media screen and (max-width: 1000px) {
+  .left{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  .right{
+    display: none;
+  }
+
+  #name{
+    font-size: 3.8vh;
+  }
+
+  .header-left{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 15vh;
+  }
+
+  a{
+    font-size: 1.5vh;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+
+    width: 15vw;
+    height: 100%;
+    border-radius: 0 0 50% 50%;
+
+    transition: 2s;
+  }
+
+  /* raises buttons on hover */
+  a:hover{
+    transition: 2s;
+    max-height: 5vh;
+    height: 5vh;
+    padding: 10% 5%;
+  }
+
+  .buttons{
+    width:75%;
+    display: flex;
+    flex-flow: row;
+    align-items: space-around;
+  }
+
+  #header-images-res-phone{
+    display: none;
+  }
+
+  #header-images-res-tab{
+    display: flex;
+
+    width: auto;
+    height: 85vh;
+
+    background: #000000 0px 0px url('images/Collage2.png') repeat-x;
+
+    /* Ensures background size */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* Scrolls background of right panel (collage images) */
+    -webkit-animation: scroll 100s linear infinite;
+    animation: scroll 100s linear infinite;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  .right{
+    display: none;
+  }
+
+  #name{
+    font-size: 3.8vh;
+    height:10vh;
+  }
+
+  .header-left{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  a{
+    font-size: 1.5vh;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+
+    width: 20vw;
+    height: 100%;
+    border-radius: 50% 50% 0 0;
+
+    transition: 2s;
+  }
+
+  .buttons{
+    width:100vw;
+    height: 10vh;
+    display: flex;
+    flex-flow: row;
+    align-items: space-around;
+  }
+
+  #header-images-res-tab{
+    display: none;
+  }
+
+  #header-images-res-phone{
+    display: flex;
+
+    height: 65vh;
+    width:100vw;
+
+    background: #000000 0px 0px url('images/Collage2.png') repeat-x;
+
+    /* Ensures background size */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* Scrolls background of right panel (collage images) */
+    -webkit-animation: scroll 100s linear infinite;
+    animation: scroll 100s linear infinite;
+  }
 }
